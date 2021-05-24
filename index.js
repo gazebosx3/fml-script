@@ -58,7 +58,7 @@ function getTopNOtherUsersForSingleUser(user, n) {
     const userPicks = getUsersVotesForOtherUsers(user)
     const asEntries = Object.entries(userPicks)
 
-    const orderedArray = asEntries.sort((a,b) => a[1] - b[2])
+    const orderedArray = asEntries.sort((a, b) => a[1] - b[2])
 
     const len = n ? n : orderedArray.length
 
@@ -66,7 +66,7 @@ function getTopNOtherUsersForSingleUser(user, n) {
     for (let i = 0; i < len; i++) {
         const otherUser = orderedArray[i][0]
         const numVotes = getHowManyTimesUserVotedForOtherUser(user, otherUser)
-        finalString += `Your #${i+1} favorite other FML user is ${otherUser}, who you voted for ${numVotes} times \n`
+        finalString += `Your #${i + 1} favorite other FML user is ${otherUser}, who you voted for ${numVotes} times \n`
     }
 
     return finalString
@@ -74,7 +74,6 @@ function getTopNOtherUsersForSingleUser(user, n) {
 }
 
 function whoLovesYaBaby(primaryUser) {
-    // for each user, call howManyTimesUserVotedForOtherUser
 
     const votes4uMap = {}
 
@@ -84,24 +83,20 @@ function whoLovesYaBaby(primaryUser) {
     }
 
 
-    const entries = Object.entries(votes4uMap).filter(el => !!el[1]).sort((a,b) => b[1] - a[1])
-
-    // console.log('entries is: ', entries)
-
-    // const orderedArray = entries.sort((a,b) => a[1] - b[1])
-
-    // console.log('orderarray is ', orderedArray)
+    const entries = Object.entries(votes4uMap)
+    .filter(el => !!el[1])
+    .sort((a, b) => b[1] - a[1])
 
     let finalString = ''
 
     for (let i = 0; i < entries.length; i++) {
         const otherUser = entries[i][0]
 
-        const isTie =  entries[i+1] ?  entries[i+1][1] === entries[i][1] : false
+        const isTie = entries[i + 1] ? entries[i + 1][1] === entries[i][1] : false
 
-        finalString += `Your #${i+1} fan is ${otherUser} \n` 
+        finalString += `Your #${i + 1} fan is ${otherUser} \n`
         if (isTie) {
-            finalString += `This person was actually tied with ${entries[i+1][0]} \n`
+            finalString += `This person was actually tied with ${entries[i + 1][0]} \n`
         }
 
 
@@ -110,5 +105,3 @@ function whoLovesYaBaby(primaryUser) {
     return finalString
 
 }
-
-console.log(whoLovesYaBaby('sam'))
