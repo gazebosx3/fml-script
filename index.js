@@ -17,6 +17,8 @@ function generateSongs() {
 
 const songs = generateSongs()
 
+console.log('songs is: ', songs)
+
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -64,14 +66,26 @@ function getUsersVotesForOtherUsers(user) {
 
     const otherUserVoteFreq = {}
 
+    // for the user picks object 
     for (const week in userPicks) {
-        const pick = userPicks[week]
+        // get the first, second, and third place picks
+        const pick1 = userPicks[week][0]
+        const pick2 = userPicks[week][1]
+        const pick3 = userPicks[week][2]
+
         for (const user in songs) {
-            const allSongsOfUser = songs[user]
-            const isSongOfUser = allSongsOfUser.includes(pick)
-            if (isSongOfUser) {
-                otherUserVoteFreq[user] ? otherUserVoteFreq[user]++ : otherUserVoteFreq[user] = 1
+            if (otherUserVoteFreq[user] === undefined) {
+                otherUserVoteFreq[user] = 0
             }
+            const allSongsOfUser = songs[user]
+            const isSongOfUser1 = allSongsOfUser.includes(pick1)
+            const isSongOfUser2 = allSongsOfUser.includes(pick2)
+            const isSongOfUser3 = allSongsOfUser.includes(pick3)
+
+            if (isSongOfUser1) otherUserVoteFreq[user] += 3
+            if (isSongOfUser2) otherUserVoteFreq[user] += 2
+            if (isSongOfUser3) otherUserVoteFreq[user] += 1
+
         }
     }
 
@@ -79,7 +93,7 @@ function getUsersVotesForOtherUsers(user) {
 
 }
 
-function getHowManyTimesUserVotedForOtherUser(user, otherUser) {
+function getUserVotesForOtherUser(user, otherUser) {
     const userPicks = getUsersVotesForOtherUsers(user)
     return userPicks[otherUser]
 
@@ -96,7 +110,7 @@ function getTopNOtherUsersForSingleUser(user, n) {
     let finalString = ''
     for (let i = 0; i < len; i++) {
         const otherUser = orderedArray[i][0]
-        const numVotes = getHowManyTimesUserVotedForOtherUser(user, otherUser)
+        const numVotes = getUserVotesForOtherUser(user, otherUser)
         finalString += `Your #${i + 1} favorite other FML user is ${otherUser}, who you voted for ${numVotes} times \n`
     }
 
@@ -109,7 +123,7 @@ function whoLovesYaBaby(primaryUser) {
     const votes4uMap = {}
 
     for (let user of users) {
-        const voteTotal = getHowManyTimesUserVotedForOtherUser(user, primaryUser)
+        const voteTotal = getUserVotesForOtherUser(user, primaryUser)
         votes4uMap[user] = voteTotal
     }
 
@@ -138,3 +152,4 @@ function whoLovesYaBaby(primaryUser) {
 }
 
 console.log(whoLovesYaBaby('gillian'))
+console.log(getTopNOtherUsersForSingleUser('gillian'))
