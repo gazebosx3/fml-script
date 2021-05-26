@@ -17,7 +17,7 @@ function generateSongs() {
 
 const songs = generateSongs()
 
-console.log('songs is: ', songs)
+// console.log('songs is: ', songs)
 
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
@@ -57,7 +57,7 @@ function generatePicks() {
 
 const picks = generatePicks()
 
-console.log('picks is: ', picks)
+// console.log('picks is: ', picks)
 
 
 function getUsersVotesForOtherUsers(user) {
@@ -103,15 +103,15 @@ function getTopNOtherUsersForSingleUser(user, n) {
     const userPicks = getUsersVotesForOtherUsers(user)
     const asEntries = Object.entries(userPicks)
 
-    const orderedArray = asEntries.sort((a, b) => a[1] - b[2])
-
+    const orderedArray = asEntries.sort((a, b) =>  b[1] - a[1])
+    
     const len = n ? n : orderedArray.length
 
     let finalString = ''
     for (let i = 0; i < len; i++) {
         const otherUser = orderedArray[i][0]
-        const numVotes = getUserVotesForOtherUser(user, otherUser)
-        finalString += `Your #${i + 1} favorite other FML user is ${otherUser}, who you voted for ${numVotes} times \n`
+        const numPoints = getUserVotesForOtherUser(user, otherUser)
+        finalString += `Your #${i + 1} favorite other FML user is ${otherUser}, who you gave a total of ${numPoints} points \n`
     }
 
     return finalString
@@ -126,7 +126,6 @@ function whoLovesYaBaby(primaryUser) {
         const voteTotal = getUserVotesForOtherUser(user, primaryUser)
         votes4uMap[user] = voteTotal
     }
-
 
     const entries = Object.entries(votes4uMap)
     .filter(el => !!el[1])
