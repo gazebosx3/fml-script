@@ -1,0 +1,236 @@
+{
+    "Sam Glass": {
+      "week1": [
+        "Adam Holtzberg song 1",
+        "Tom Rankin song 1",
+        "Emily Scott song 1"
+      ],
+      "week2": [
+        "Gillian Maxwell song 2",
+        "Sam Glass song 2",
+        "Emily Scott song 2"
+      ],
+      "week3": [
+        "Adam Holtzberg song 3",
+        "Bex Sussman song 3",
+        "Emily Scott song 3"
+      ],
+      "week4": [
+        "Adam Holtzberg song 4",
+        "Tom Rankin song 4",
+        "Bex Sussman song 4"
+      ],
+      "week5": [
+        "Gillian Maxwell song 5",
+        "Adam Holtzberg song 5",
+        "Josh Holtzberg song 5"
+      ],
+      "week6": [
+        "Emily Scott song 6",
+        "Adam Holtzberg song 6",
+        "Tom Rankin song 6"
+      ],
+      "week7": [
+        "Gillian Maxwell song 7",
+        "Tom Rankin song 7",
+        "Josh Holtzberg song 7"
+      ],
+      "week8": [
+        "Tom Rankin song 8",
+        "Adam Holtzberg song 8",
+        "Gillian Maxwell song 8"
+      ]
+    },
+    "Josh Holtzberg": {
+      "week1": [
+        "Adam Holtzberg song 1",
+        "Sam Glass song 1",
+        "Bex Sussman song 1"
+      ],
+      "week2": [
+        "Tom Rankin song 2",
+        "Bex Sussman song 2",
+        "Gillian Maxwell song 2"
+      ],
+      "week3": [
+        "Adam Holtzberg song 3",
+        "Emily Scott song 3",
+        "Tom Rankin song 3"
+      ],
+      "week4": [
+        "Sam Glass song 4",
+        "Adam Holtzberg song 4",
+        "Emily Scott song 4"
+      ],
+      "week5": [
+        "Sam Glass song 5",
+        "Emily Scott song 5",
+        "Gillian Maxwell song 5"
+      ],
+      "week6": [ "Bex Sussman song 6", "Emily Scott song 6", "Sam Glass song 6" ],
+      "week7": [ "Emily Scott song 7", "Tom Rankin song 7", "Tom Rankin song 7" ],
+      "week8": [
+        "Bex Sussman song 8",
+        "Adam Holtzberg song 8",
+        "Bex Sussman song 8"
+      ]
+    },
+    "Adam Holtzberg": {
+      "week1": [ "Emily Scott song 1", "Sam Glass song 1", "Bex Sussman song 1" ],
+      "week2": [
+        "Josh Holtzberg song 2",
+        "Emily Scott song 2",
+        "Tom Rankin song 2"
+      ],
+      "week3": [
+        "Tom Rankin song 3",
+        "Bex Sussman song 3",
+        "Adam Holtzberg song 3"
+      ],
+      "week4": [
+        "Josh Holtzberg song 4",
+        "Emily Scott song 4",
+        "Gillian Maxwell song 4"
+      ],
+      "week5": [
+        "Josh Holtzberg song 5",
+        "Sam Glass song 5",
+        "Emily Scott song 5"
+      ],
+      "week6": [
+        "Tom Rankin song 6",
+        "Josh Holtzberg song 6",
+        "Sam Glass song 6"
+      ],
+      "week7": [ "Emily Scott song 7", "Sam Glass song 7", "Tom Rankin song 7" ],
+      "week8": [ "Tom Rankin song 8", "Bex Sussman song 8", "Bex Sussman song 8" ]
+    },
+    "Gillian Maxwell": {
+      "week1": [
+        "Bex Sussman song 1",
+        "Gillian Maxwell song 1",
+        "Sam Glass song 1"
+      ],
+      "week2": [ "Emily Scott song 2", "Tom Rankin song 2", "Bex Sussman song 2" ],
+      "week3": [ "Bex Sussman song 3", "Sam Glass song 3", "Tom Rankin song 3" ],
+      "week4": [
+        "Bex Sussman song 4",
+        "Josh Holtzberg song 4",
+        "Emily Scott song 4"
+      ],
+      "week5": [
+        "Tom Rankin song 5",
+        "Josh Holtzberg song 5",
+        "Adam Holtzberg song 5"
+      ],
+      "week6": [
+        "Adam Holtzberg song 6",
+        "Gillian Maxwell song 6",
+        "Emily Scott song 6"
+      ],
+      "week7": [
+        "Josh Holtzberg song 7",
+        "Emily Scott song 7",
+        "Josh Holtzberg song 7"
+      ],
+      "week8": [
+        "Gillian Maxwell song 8",
+        "Bex Sussman song 8",
+        "Bex Sussman song 8"
+      ]
+    },
+    "Tom Rankin": {
+      "week1": [
+        "Emily Scott song 1",
+        "Emily Scott song 1",
+        "Gillian Maxwell song 1"
+      ],
+      "week2": [ "Tom Rankin song 2", "Bex Sussman song 2", "Sam Glass song 2" ],
+      "week3": [ "Tom Rankin song 3", "Emily Scott song 3", "Emily Scott song 3" ],
+      "week4": [
+        "Emily Scott song 4",
+        "Josh Holtzberg song 4",
+        "Adam Holtzberg song 4"
+      ],
+      "week5": [ "Emily Scott song 5", "Tom Rankin song 5", "Sam Glass song 5" ],
+      "week6": [
+        "Gillian Maxwell song 6",
+        "Sam Glass song 6",
+        "Bex Sussman song 6"
+      ],
+      "week7": [
+        "Gillian Maxwell song 7",
+        "Josh Holtzberg song 7",
+        "Bex Sussman song 7"
+      ],
+      "week8": [
+        "Bex Sussman song 8",
+        "Emily Scott song 8",
+        "Josh Holtzberg song 8"
+      ]
+    },
+    "Emily Scott": {
+      "week1": [ "Sam Glass song 1", "Bex Sussman song 1", "Emily Scott song 1" ],
+      "week2": [
+        "Tom Rankin song 2",
+        "Sam Glass song 2",
+        "Gillian Maxwell song 2"
+      ],
+      "week3": [ "Tom Rankin song 3", "Sam Glass song 3", "Emily Scott song 3" ],
+      "week4": [
+        "Josh Holtzberg song 4",
+        "Bex Sussman song 4",
+        "Emily Scott song 4"
+      ],
+      "week5": [ "Bex Sussman song 5", "Sam Glass song 5", "Emily Scott song 5" ],
+      "week6": [
+        "Sam Glass song 6",
+        "Gillian Maxwell song 6",
+        "Emily Scott song 6"
+      ],
+      "week7": [
+        "Josh Holtzberg song 7",
+        "Gillian Maxwell song 7",
+        "Adam Holtzberg song 7"
+      ],
+      "week8": [ "Bex Sussman song 8", "Sam Glass song 8", "Emily Scott song 8" ]
+    },
+    "Bex Sussman": {
+      "week1": [
+        "Emily Scott song 1",
+        "Gillian Maxwell song 1",
+        "Emily Scott song 1"
+      ],
+      "week2": [
+        "Adam Holtzberg song 2",
+        "Gillian Maxwell song 2",
+        "Josh Holtzberg song 2"
+      ],
+      "week3": [
+        "Emily Scott song 3",
+        "Bex Sussman song 3",
+        "Adam Holtzberg song 3"
+      ],
+      "week4": [ "Emily Scott song 4", "Tom Rankin song 4", "Sam Glass song 4" ],
+      "week5": [
+        "Gillian Maxwell song 5",
+        "Sam Glass song 5",
+        "Bex Sussman song 5"
+      ],
+      "week6": [
+        "Josh Holtzberg song 6",
+        "Emily Scott song 6",
+        "Bex Sussman song 6"
+      ],
+      "week7": [
+        "Gillian Maxwell song 7",
+        "Tom Rankin song 7",
+        "Emily Scott song 7"
+      ],
+      "week8": [
+        "Josh Holtzberg song 8",
+        "Adam Holtzberg song 8",
+        "Sam Glass song 8"
+      ]
+    }
+  }
